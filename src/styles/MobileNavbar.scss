@@ -1,0 +1,32 @@
+.mobileNav__section {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+
+  .find-me-title {
+    border-top: 1px solid #1e2d3d;
+    border-bottom: 1px solid #1e2d3d;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .icon-row .col-3 {
+    padding: 20px; // Adds some space around the icons
+    border-bottom: 1px solid #1e2d3d;
+    border-left: 1px solid #1e2d3d;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .icon-border {
+    border: 1px solid #cccccc; // Adjust the color as needed
+    padding: 5px; // Adds some space inside the border, around the icon
+    display: block; // Ensures the img tag behaves as a block-level element for proper centering
+    margin: 0 auto; // Centers the icon inside the column
+    max-width: 100%; // Ensures the image is responsive and does not overflow its container
+    height: auto; // Maintains the aspect ratio of the image
+  }
+}

@@ -1,0 +1,23 @@
+.skills__section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 52px;
+  }
+
+  .card {
+    border-radius: 0.9375rem;
+    border: 1px solid #182533;
+    background: #0d1921;
+    backdrop-filter: blur(4px);
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: auto;
+    padding-top: 3rem;
+  }
+}

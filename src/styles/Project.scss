@@ -1,0 +1,109 @@
+.feature__project {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    position: relative; /* Added for absolute positioning context */
+    border-radius: 1rem;
+    border: 1px solid #25374b;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(6.2785139083862305px);
+    overflow: hidden; /* Ensure absolute elements don't overflow */
+
+    .card-body {
+      padding: 0 10px;
+      
+      .project__details {
+        position: relative; /* Added for transition context */
+        border-radius: 0rem 0rem 1rem 1rem;
+        background: #192634;
+        padding: 0 0.6rem;
+        transition: transform 0.3s ease; /* Added for sliding effect */
+      }
+    }
+
+    .project__image {
+      border-top-left-radius: 0.75rem;
+      border-top-right-radius: 0.75rem;
+      padding: 0 1rem;
+      height: 240px;
+      object-fit: cover;
+      object-position: top;
+      width: 100%;
+
+      @media only screen and (max-width: 768px) {
+        height: 160px;
+      }
+    }
+
+    h4 {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 12px;
+      color: #718eac;
+    }
+
+    .view__card {
+      border-radius: 0.5rem;
+      background: #111f2f;
+      display: flex;
+      padding: 0.75rem 1.5rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+      color: #18d26e;
+      display: none; /* Initially hidden */
+    }
+
+    &:hover {
+      .view__card {
+        display: flex;
+      }
+    }
+  }
+
+  .view__btn {
+    border-radius: 0.5rem;
+    background: #111f2f;
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    color: #18d26e;
+
+    &:hover {
+      border: 1px solid #18d26e;
+      background: #111f2f;
+      color: #18d26e;
+      transform: scale(1.1);
+    }
+  }
+
+  .project__tabs {
+    .nav-pills {
+      border-radius: 0.75rem;
+      background: #131e27;
+      padding: 0.5rem;
+
+      .nav-link {
+        color: #718eac !important;
+        font-size: 0.875rem;
+      }
+      .active {
+        border-radius: 0.5rem;
+        background: #18d26e;
+        color: #fff !important;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
