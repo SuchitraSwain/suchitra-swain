@@ -12,7 +12,7 @@ const ProjectCarousel = (props: { carousel: CarouselItem[] }) => {
 
   return (
     <Carousel>
-      {carousel.map((item, index) => (
+      {carousel?.map((item, index) => (
         <Carousel.Item
           className={`carousel-item ${index === 0 ? "active" : ""}`}
           key={index}

@@ -29,7 +29,6 @@ const Project = () => {
           {projectCard.slice(0, 4).map((project, index) => (
             <div className="col-md-6 mt-4" key={index}>
               <div className="card">
-                {" "}
                 <div className="row project__header">
                   <div className="col-md-12">
                     <img

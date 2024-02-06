@@ -9,6 +9,16 @@ $background-dark: #0e1922;
 }
 
 .bottom-modal {
+  .stack__images {
+    background-color: #252426;
+    border: 1px solid #26303b;
+    backdrop-filter: blur(4px);
+    border-radius: 50%;
+    padding: 10px;
+    object-fit: contain;
+    width: 48px;
+    height: 48px;
+  }
   .modal-dialog {
     margin: 0 auto;
     width: 100%;

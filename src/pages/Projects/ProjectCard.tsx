@@ -3,8 +3,6 @@ import dots from "../../assets/project/dots.png";
 import ProjectDetails from "./ProjectDetails";
 
 const ProjectCard = ({ project }: any) => {
-  const [selectedCategory, setSelectedCategory] = useState("react"); // Default to ReactJs
-
   const [show, setShow] = useState(false);
   const [selectedData, setSelectedData] = useState([]);
 

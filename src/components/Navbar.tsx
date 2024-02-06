@@ -5,7 +5,9 @@ import Icon from "../assets/icon.png";
 import { Link, useLocation } from "react-router-dom";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import MobileNavbar from "./MobileNavbar";
-import { HashLink } from "react-router-hash-link";
+import linkedin from "../assets/linkedinNav.png";
+import behance from "../assets/behanceNav.png";
+import insta from "../assets/instaNav.png";
 
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -54,7 +56,7 @@ const Navbar = () => {
       }`}
       id="/"
     >
-      <div className="container-fluid p-0">
+      <div className="container p-0">
         <div className="row">
           <div className="col-md-12">
             <nav
@@ -99,16 +101,13 @@ const Navbar = () => {
                         }`}
                         key={index}
                       >
-                        <HashLink
-                          smooth
-                          className="nav-link text-white"
+                        <Link
+                          className="nav-link text-light"
                           aria-current="page"
-                          to={`#${nav.path}`}
-                          onClick={handleNavLinkClick}
-                          scroll={(el) => scrollWithOffset(el, 70)}
+                          to={nav.path}
                         >
                           {nav.name}
-                        </HashLink>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -116,13 +115,29 @@ const Navbar = () => {
                   <div className="d-md-flex d-none">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                       <li className="nav-item">
-                        <Link to="/" className="nav-link">
-                          <BsLinkedin />
+                        <Link
+                          to="https://www.linkedin.com/in/suchitra-swain-47562ab7/"
+                          className="nav-link"
+                          target="_blank"
+                        >
+                          <img
+                            src={linkedin}
+                            alt="linkedin"
+                            className="img-fluid"
+                          />
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link to="/" className="nav-link">
-                          <BsGithub />
+                        <Link
+                          to="https://www.behance.net/suchitraswain"
+                          className="nav-link"
+                          target="_blank"
+                        >
+                          <img
+                            src={behance}
+                            alt="behance"
+                            className="img-fluid"
+                          />
                         </Link>
                       </li>
                       <li className="nav-item">

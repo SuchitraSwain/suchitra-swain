@@ -20,4 +20,23 @@
     height: auto;
     padding-top: 3rem;
   }
+
+  .skill__tabs {
+    .nav-pills {
+      border-radius: 0.75rem;
+      background: #131e27;
+      padding: 0.5rem;
+
+      .nav-link {
+        color: #718eac !important;
+        font-size: 0.875rem;
+      }
+      .active {
+        border-radius: 0.5rem;
+        background: #18d26e;
+        color: #fff !important;
+        font-weight: bold;
+      }
+    }
+  }
 }

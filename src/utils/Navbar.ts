@@ -5,14 +5,14 @@ export const navbarList = [
   },
   {
     name: "_about-me",
-    path: "about_me",
+    path: "#about_me",
   },
   {
     name: "_projects",
-    path: "feature__project",
+    path: "#feature__project",
   },
   {
     name: "_publications",
-    path: "publication",
+    path: "#publication",
   },
 ];

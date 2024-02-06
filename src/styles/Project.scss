@@ -15,7 +15,7 @@
 
     .card-body {
       padding: 0 10px;
-      
+
       .project__details {
         position: relative; /* Added for transition context */
         border-radius: 0rem 0rem 1rem 1rem;
@@ -29,19 +29,18 @@
       border-top-left-radius: 0.75rem;
       border-top-right-radius: 0.75rem;
       padding: 0 1rem;
-      height: 240px;
+      height: 300px;
       object-fit: cover;
       object-position: top;
       width: 100%;
-
-      @media only screen and (max-width: 768px) {
-        height: 160px;
-      }
     }
 
     h4 {
       font-size: 20px;
       color: #fff;
+      @media only screen and (max-width: 768px) {
+        font-size: 14px;
+      }
     }
 
     p {
@@ -58,14 +57,14 @@
       align-items: center;
       gap: 0.625rem;
       color: #18d26e;
-      display: none; /* Initially hidden */
+      display: flex; /* Initially hidden */
     }
 
-    &:hover {
-      .view__card {
-        display: flex;
-      }
-    }
+    // &:hover {
+    //   .view__card {
+    //     display: flex;
+    //   }
+    // }
   }
 
   .view__btn {
@@ -104,6 +103,21 @@
       }
     }
   }
+  .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(
+      40%
+    ); /* Start with only 30% showing, adjust this value as needed */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+    background: white; /* or any color that matches your card design */
+  }
+
+  .card:hover .card-body {
+    transform: translateY(
+      0%
+    ); /* Adjust to show 60% of the card-body on hover */
+  }
 }
-
-
