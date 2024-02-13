@@ -5,7 +5,7 @@ import { projectCard } from "../../utils/ProjectCard";
 import "../../styles/Project.scss";
 
 const ProjectList = () => {
-  const [selectedCategory, setSelectedCategory] = useState("react");
+  const [selectedCategory, setSelectedCategory] = useState("reactjs");
 
   const filteredProjects = useMemo(
     () =>

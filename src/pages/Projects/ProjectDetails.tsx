@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
 import "../../styles/ProjectDetails.scss";
-import close from "../../assets/cross.png";
+import close from "../../assets/closeModal.png";
 import ProjectCarousel from "./ProjectCarousel";
 
 interface StackItem {
@@ -37,7 +37,7 @@ const ProjectDetails = ({ show, onHide, selectedData }: any) => (
   >
     <Modal.Header closeButton={false}>
       <Modal.Title>Project Details</Modal.Title>
-      <button type="button" onClick={onHide} className="close__btn">
+      <button type="button" onClick={onHide} className="close__btn img-fluid">
         <img
           src={close}
           alt="Close"

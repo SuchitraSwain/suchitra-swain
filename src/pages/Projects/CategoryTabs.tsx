@@ -1,6 +1,6 @@
 import React from "react";
 
-const categories = ["react", "nextjs", "angular", "html"];
+const categories = ["reactjs", "nextjs", "angular", "html"];
 
 const CategoryTabs = ({ selectedCategory, onCategoryChange }: any) => (
   <div className="col-md-8 col-12 text-end d-flex justify-content-end project__tabs">

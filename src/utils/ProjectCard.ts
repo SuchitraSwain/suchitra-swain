@@ -140,7 +140,7 @@ export const projectCard = [
     image: sushmita,
     icon: react,
     projectLink: "https://sushmita-swain.web.app/",
-    selected: "react",
+    selected: "reactjs",
     description: "Designer portfolio showcasing enhanced skills in ReactJS.",
     useStack: [
       { name: "ReactJs", icon: react },
@@ -220,11 +220,11 @@ export const projectCard = [
     icon: react,
     projectLink: "https://restaurant-react-website.vercel.app/",
     github: "https://github.com/SuchitraSwain/restaurant-react-website",
-    selected: "react",
+    selected: "reactjs",
     description:
       "Fully Responsive Restaurant Website with Modern UI and UX in ReactJS",
     useStack: [
-      { name: "React", icon: react },
+      { name: "reactjs", icon: react },
       { name: "Redux", icon: redux },
       { name: "Material UI", icon: materialUI },
     ],
@@ -243,11 +243,11 @@ export const projectCard = [
     icon: react,
     projectLink: "https://fitness-react-app.vercel.app/",
     github: "https://github.com/SuchitraSwain/fitness-react-app",
-    selected: "react",
+    selected: "reactjs",
     description:
       "Fitness exercise react application with Rapid APIs. Fully mobile friendly",
     useStack: [
-      { name: "React", icon: react },
+      { name: "reactjs", icon: react },
       { name: "Redux", icon: redux },
       { name: "Material UI", icon: materialUI },
     ],

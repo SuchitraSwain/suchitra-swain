@@ -16,7 +16,6 @@
   border-bottom: 4px solid green;
 }
 
-
 .navbar ul {
   font-size: 16px;
 }
@@ -51,9 +50,9 @@
 
 .navbar-toggler .icon-bar {
   display: block;
-  width: 25px;
+  width: 30px;
   height: 3px;
-  background-color: #1e2d3d; /* Adjust as needed */
+  background-color: #718eac;
   margin: 5px 0;
   transition: all 0.3s;
   border: none;
@@ -67,16 +66,10 @@ svg {
   fill: #1e2d3d;
 }
 
-/* First-child and last-child specific styles */
 .navbar ul li:first-child {
   border-left: 1px solid #1e2d3d;
 }
 
-.navbar ul:last-child li:last-child {
-  // border-right: 0;
-}
-
-/* Navbar toggler specific animations */
 .navbar-toggler.collapsed .icon-bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
   transition: all 0.2s;
@@ -90,10 +83,15 @@ svg {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
+// .lineCross {
+//   position: absolute;
+//   right: 80px;
+//   top: -14px;
+// }
 /* Media queries for responsive adjustments */
 @media (max-width: 1200px) {
   /* Desktops */
-  
+
   .navbar ul {
     font-size: 14px;
   }
@@ -128,7 +126,6 @@ svg {
   .navbar ul {
     font-size: 16px;
   }
-  
 
   .navbar ul li a {
     padding: 4px 16px !important;
@@ -143,17 +140,16 @@ svg {
 @media only screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    height: 100vh; /* Set the navbar height to 100% of the viewport height */
+    height: 100vh;
   }
   .navbar__section {
-    padding: 20px 0px;
+    padding: 16px 0px;
 
     .navbar .nav-item.active .nav-link {
       border-bottom: none;
       border-left: 4px solid green;
     }
 
-   
     .navbar ul li {
       a {
         line-height: 4;
@@ -164,6 +160,11 @@ svg {
       }
       border: none;
       border-bottom: 1px solid #1e2d3d;
+    }
+    .line {
+      position: absolute;
+      right: 70px;
+      top: -14px;
     }
   }
 }

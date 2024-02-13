@@ -3,8 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../assets/hero.png");
-  background-position: right center; /* Set the background image to the right side */
+  background-image: url("../assets/banner.png");
+  background-position: right center;
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -16,7 +16,7 @@
     height: 100vh;
     padding-top: 3rem;
     text-align: center;
-    background-size: 600px;
+    background-size: cover;
     background-position: center;
     .column {
       height: 100vh;

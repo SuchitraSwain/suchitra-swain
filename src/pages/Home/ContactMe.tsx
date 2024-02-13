@@ -16,13 +16,13 @@ const ContactMe = () => {
             <h5 className="gray__color">
               Empower Your Projects with Precision Code
             </h5>
-            <h1 className="text-white fw-bold mt-3">
+            <h1 className="text-white fw-bold mt-md-3 mt-5">
               Reach Out for Expert Development Solutions!
             </h1>
-            <h5 className="dark__green__color mt-4">
+            <h6 className="dark__green__color mt-4">
               <img src={email} alt="email" className="img-fluid mx-1" />
               suchitraswain.2012@gmail.com
-            </h5>
+            </h6>
           </div>
           <div className="col-md-12 contact__footer">
             <img

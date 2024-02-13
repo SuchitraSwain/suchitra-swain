@@ -1,14 +1,13 @@
-import React from "react";
-import heroImage from "../../assets/hero.png";
-import heroMobileImage from "../../assets/heroMobile.png";
+import { Link } from "react-router-dom";
 import "../../styles/HeroSection.scss";
+import pdf from "../../assets/SuchitraSwain.pdf";
 
 const HeroSection = () => {
   return (
-    <section className="hero__section">
+    <section className="hero__section" id="hello">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-md-6 d-flex flex-column justify-content-center column">
+          <div className="col-lg-12 col-md-12 d-flex flex-column justify-content-center column">
             <div className="first">
               {" "}
               <p className="lightGray__color mb-0">Hi all. I am</p>
@@ -17,8 +16,6 @@ const HeroSection = () => {
             </div>
 
             <div className="second">
-              {" "}
-              {/* Moved 'second' class to the bottom */}
               <p className="mt-5 gray__color">
                 // Turning Code Into Creative Solutions
               </p>
@@ -26,18 +23,27 @@ const HeroSection = () => {
               <p className="gray__color">
                 <span className="blue__color fw-bold">const</span>{" "}
                 <span className="green__color fw-bold">githubLink</span> =
-                <span className="orange__color fw-bold">
-                  {" "}
-                  "https://github.com/example/url"
-                </span>
+                <a
+                  href="https://github.com/SuchitraSwain"
+                  className="orange__color mx-2 text-decoration-none fw-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  "https://github.com/SuchitraSwain"
+                </a>
               </p>
               <p className="gray__color">// you can also download my resume</p>
               <p className="gray__color">
                 <span className="blue__color fw-bold">const</span>{" "}
                 <span className="green__color fw-bold">resume</span> =
                 <span className="orange__color fw-bold">
-                  {" "}
-                  "download_resume"
+                  <Link
+                    to={pdf}
+                    target="_blank"
+                    className="orange__color mx-2 text-decoration-none fw-bold"
+                  >
+                    "download_resume"
+                  </Link>
                 </span>
               </p>
             </div>

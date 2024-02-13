@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { projectCard } from "../../utils/ProjectCard";
 import "../../styles/Project.scss";
 import dots from "../../assets/project/dots.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ProjectDetails from "../Projects/ProjectDetails";
 
 const Project = () => {
-  const navigate = useNavigate();
   const [show, setShow] = useState(false);
   const [selectedData, setSelectedData] = useState([]);
 
