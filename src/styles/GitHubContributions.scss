@@ -1,5 +1,4 @@
 .github__contributions__section {
-  background: #0c1721;
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: flex;
@@ -34,15 +33,15 @@
       left: 0;
       right: 0;
       height: 3px;
-      background: linear-gradient(90deg, #18d26e, #4f6cd5, #18d26e);
+      background: linear-gradient(90deg, #e99287, #43d9ad, #18d26e);
       opacity: 0;
       transition: opacity 0.3s ease;
     }
 
     &:hover {
       transform: translateY(-5px);
-      border-color: #18d26e;
-      box-shadow: 0 10px 30px rgba(24, 210, 110, 0.1);
+      border-color: #43d9ad;
+      box-shadow: 0 10px 30px rgba(67, 217, 173, 0.2);
 
       &::before {
         opacity: 1;
@@ -87,7 +86,7 @@
         transition: color 0.3s ease;
 
         &:hover {
-          color: #18d26e;
+          color: #43d9ad;
         }
       }
     }
