@@ -31,7 +31,10 @@ import firebase from "../assets/skills/firebase.png";
 import materialUI from "../assets/skills/materialUI.png";
 import nodejs from "../assets/skills/node.png";
 import mqtt from "../assets/skills/mqtt.png";
-
+import postgresql from "../assets/skills/postgresql.jpg";
+import clerk from "../assets/skills/clerk.png";
+import stripe from "../assets/skills/stripe.png";
+import drizzle from "../assets/skills/drizzle.webp";
 // project image
 import budja1 from "../assets/project/Budja1.png";
 import budja2 from "../assets/project/Budja2.png";
@@ -69,8 +72,35 @@ import ohmassistant1 from "../assets/project/ohmassistant1.png";
 import ohmassistant2 from "../assets/project/ohmassistant2.png";
 import rvm1 from "../assets/project/RVM1.png";
 import rvm2 from "../assets/project/RVM2.png";
+import duolingo1 from "../assets/project/Duolingo.png";
+import duolingo2 from "../assets/project/Duolingo1.png";
+import duolingo3 from "../assets/project/Duolingo2.png";
 
 export const projectCard = [
+  {
+    url: "duolingo-clone",
+    name: "Duolingo Clone With Nextjs",
+    title: "Duolingo Clone",
+    image: duolingo1,
+    icon: nextjs,
+    projectLink: "https://duolingo-clone-nextjs-smoky.vercel.app/",
+    selected: "nextjs",
+    description:
+      "This is a repository for a 'Build a Duolingo Clone With Nextjs, React, Drizzle, Stripe (2024)'. Key Features: - 🌐 Next.js 14 & server actions - 🗣 AI Voices using Elevenlabs AI - 🎨 Beautiful component system using Shadcn UI - 🎭 Amazing characters thanks to KenneyNL - 🔐 Auth using Clerk - 🔊 Sound effects - ❤️ Hearts system - 🌟 Points / XP system - 💔 No hearts left popup - 🚪 Exit confirmation popup - 🔄 Practice old lessons to regain hearts - 🏆 Leaderboard - 🗺 Quests milestones - 🛍 Shop system to exchange points with hearts - 💳 Pro tier for unlimited hearts using Stripe - 🏠 Landing page - 📊 Admin dashboard React Admin - 🌧 ORM using DrizzleORM - 💾 PostgresDB using NeonDB - 🚀 Deployment on Vercel - 📱 Mobile responsiveness",
+    useStack: [
+      { name: "Next.js", icon: nextjs },
+      { name: "React", icon: react },
+      { name: "Drizzle", icon: drizzle },
+      { name: "Stripe", icon: stripe },
+      { name: "Clerk", icon: clerk },
+      { name: "PostgreSQL", icon: postgresql },
+    ],
+    carousel: [
+      { image: duolingo1 },
+      { image: duolingo2 },
+      { image: duolingo3 },
+    ],
+  },
   {
     url: "budja-nft",
     name: "Budja NFT",
@@ -133,6 +163,7 @@ export const projectCard = [
       { image: hornnies3 },
     ],
   },
+
   {
     url: "sushmita-portfolio",
     name: "Sushmita Swain portfolio",
