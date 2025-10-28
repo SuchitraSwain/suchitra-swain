@@ -1,0 +1,81 @@
+// Card Mixins
+@mixin card-base {
+  border-radius: $card-border-radius;
+  border: 1px solid $border-primary;
+  background: $bg-secondary;
+  backdrop-filter: blur($card-backdrop-blur);
+  transition: all $transition-normal;
+}
+
+@mixin card-hover {
+  &:hover {
+    transform: translateY(-5px);
+    border-color: $primary-green;
+    box-shadow: 0 10px 30px rgba(67, 217, 173, 0.2);
+  }
+}
+
+// Button Mixins
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: $btn-border-radius;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all $transition-normal;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+@mixin button-primary {
+  background: linear-gradient(135deg, #00d4aa, #00a085);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 212, 170, 0.3);
+
+  &:hover {
+    background: linear-gradient(135deg, #00a085, #007a6b);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 212, 170, 0.4);
+  }
+}
+
+@mixin button-secondary {
+  background: transparent;
+  color: #00d4aa;
+  border: 1px solid #00d4aa;
+
+  &:hover {
+    background: rgba(0, 212, 170, 0.1);
+    transform: translateY(-2px);
+  }
+}
+
+// Section Mixins
+@mixin section-base {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Responsive Mixins
+@mixin mobile {
+  @media only screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: $desktop) {
+    @content;
+  }
+}

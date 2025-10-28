@@ -1,0 +1,59 @@
+@import "../../../styles/base/variables";
+@import "../../../styles/base/mixins";
+
+.btn {
+  @include button-base;
+
+  // Size variants
+  &-small {
+    padding: $btn-padding-sm;
+    font-size: 0.875rem;
+  }
+
+  &-medium {
+    padding: $btn-padding-md;
+    font-size: 1rem;
+  }
+
+  &-large {
+    padding: $btn-padding-lg;
+    font-size: 1.125rem;
+  }
+
+  // Style variants
+  &-primary {
+    @include button-primary;
+  }
+
+  &-secondary {
+    @include button-secondary;
+  }
+
+  &-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid $border-secondary;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: $primary-green;
+      color: $primary-green;
+      transform: translateY(-2px);
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:focus {
+    outline: 2px solid rgba(0, 212, 170, 0.5);
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+}

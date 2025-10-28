@@ -26,30 +26,10 @@
     position: relative;
     overflow: hidden;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, #e99287, #43d9ad, #18d26e);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
     &:hover {
       transform: translateY(-5px);
       border-color: #43d9ad;
       box-shadow: 0 10px 30px rgba(67, 217, 173, 0.2);
-
-      &::before {
-        opacity: 1;
-      }
-
-      .github__card__button {
-        transform: scale(1.05);
-      }
     }
 
     .github__card__header {

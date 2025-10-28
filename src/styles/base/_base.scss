@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+@import "variables";
+@import "mixins";
+
+// Global Styles
+body {
+  margin: 0;
+  font-family: "Fira Code", monospace !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  padding-top: 50px;
+  background-image: url("../../assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+// Color Utility Classes
+.orange__color { color: $primary-orange; }
+.green__color { color: $primary-green; }
+.dark__green__color { color: $dark-green; }
+.blue__color { color: $primary-blue; }
+.dark__blue__color { color: $dark-blue; }
+.lightGray__color { color: $light-gray; }
+.gray__color { color: $gray; }
+.gray__secondary__color { color: $gray-secondary; }
+
+// Container Utilities
+.container-fluid {
+  @include mobile {
+    padding-right: 1.2rem !important;
+    padding-left: 1.2rem !important;
+  }
+}
+
+// Common Card Styles
+.card-base {
+  @include card-base;
+  @include card-hover;
+}
+
+// Common Button Styles
+.btn-primary {
+  @include button-base;
+  @include button-primary;
+}
+
+.btn-secondary {
+  @include button-base;
+  @include button-secondary;
+}

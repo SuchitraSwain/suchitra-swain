@@ -1,20 +1,29 @@
 import React, { useState } from "react";
 import dots from "../../assets/project/dots.png";
 import ProjectDetails from "./ProjectDetails";
+import Card from "../../components/common/Card/Card";
+import Button from "../../components/common/Button/Button";
+import { Project } from "../../types/Project";
+import "./ProjectCard.scss";
 
-const ProjectCard = ({ project }: any) => {
+interface ProjectCardProps {
+  project: Project;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [show, setShow] = useState(false);
-  const [selectedData, setSelectedData] = useState([]);
+  const [selectedData, setSelectedData] = useState<Project | null>(null);
 
   const handleClose = () => setShow(false);
 
-  const viewProject = (project: any) => {
+  const viewProject = (project: Project) => {
     setShow(true);
     setSelectedData(project);
   };
+
   return (
     <div className="col-md-6 mt-4">
-      <div className="card">
+      <Card className="project-card">
         <div className="row project__header">
           <div className="col-md-12">
             <img src={dots} alt="dots" className="img-fluid mx-3 mt-3" />
@@ -42,19 +51,21 @@ const ProjectCard = ({ project }: any) => {
             </div>
             <div className="row mb-2">
               <div className="col-md-12">
-                <button
-                  className="view__card btn"
+                <Button
+                  variant="secondary"
+                  size="medium"
                   onClick={() => viewProject(project)}
+                  className="view__card"
                 >
                   View Project
-                </button>
+                </Button>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Card>
 
-      {show && (
+      {show && selectedData && (
         <ProjectDetails
           show={show}
           onHide={handleClose}

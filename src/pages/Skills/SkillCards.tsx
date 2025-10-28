@@ -1,4 +1,6 @@
 import React from "react";
+import Card from "../../components/common/Card/Card";
+import "./SkillCards.scss";
 
 interface Skill {
   icon: string;
@@ -14,25 +16,21 @@ const SkillCards: React.FC<SkillCardsProps> = ({ skills }) => {
     <div className="row justify-content-center">
       {skills.map((skill, index) => (
         <div
-          className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4 custom"
+          className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4"
           key={index}
         >
-          <div className="card h-100">
-            <div className="card-body">
-              <div className="row">
-                <div className="col-md-12 d-flex align-items-center">
-                  <img
-                    src={skill.icon}
-                    alt="Skill icon"
-                    className="img-fluid me-3"
-                    width={32}
-                    height={32}
-                  />
-                  <p className="text-white mb-0">{skill.name}</p>
-                </div>
-              </div>
+          <Card className="skill-card h-100">
+            <div className="skill-card__content">
+              <img
+                src={skill.icon}
+                alt="Skill icon"
+                className="skill-card__icon"
+                width={32}
+                height={32}
+              />
+              <p className="skill-card__name">{skill.name}</p>
             </div>
-          </div>
+          </Card>
         </div>
       ))}
     </div>

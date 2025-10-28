@@ -4,11 +4,16 @@ import { HashLink } from "react-router-hash-link";
 import "../styles/Navbar.scss";
 import Icon from "../assets/icon.png";
 import linkedin from "../assets/linkedinNav.png";
-import behance from "../assets/behanceNav.png";
+import github from "../assets/githubnav.png";
 import MobileNavbar from "./MobileNavbar";
 import line from "../assets/line.png";
 
-const targetHashes = ["#about_me", "#feature__project", "#publication"];
+const targetHashes = [
+  "#about_me",
+  "#feature__project",
+  "#github_contributions",
+  "#publication",
+];
 
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -79,7 +84,7 @@ const Navbar = () => {
                   }`}
                 >
                   <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li
+                    {/* <li
                       className={`nav-item ${isHelloActive() ? "active" : ""}`}
                     >
                       <HashLink
@@ -95,7 +100,7 @@ const Navbar = () => {
                       >
                         _hello
                       </HashLink>
-                    </li>
+                    </li> */}
                     {targetHashes.map((hash) => (
                       <li
                         key={hash}
@@ -106,7 +111,7 @@ const Navbar = () => {
                         <HashLink
                           to={`/${hash}`}
                           className="nav-link text-light"
-                          onClick={handleNavLinkClick} // Collapse navbar on link click
+                          onClick={handleNavLinkClick}
                           scroll={(el) =>
                             el.scrollIntoView({
                               behavior: "smooth",
@@ -131,6 +136,20 @@ const Navbar = () => {
                           <img
                             src={linkedin}
                             alt="LinkedIn"
+                            className="img-fluid"
+                          />
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a
+                          href="https://github.com/SuchitraSwain"
+                          className="nav-link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src={github}
+                            alt="GitHub"
                             className="img-fluid"
                           />
                         </a>

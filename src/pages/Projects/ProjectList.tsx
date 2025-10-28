@@ -2,6 +2,7 @@ import React, { useState, useMemo } from "react";
 import ProjectCard from "./ProjectCard";
 import CategoryTabs from "./CategoryTabs";
 import { projectCard } from "../../utils/ProjectCard";
+import { Project } from "../../types/Project";
 import "../../styles/Project.scss";
 
 const ProjectList = () => {
@@ -10,7 +11,7 @@ const ProjectList = () => {
   const filteredProjects = useMemo(
     () =>
       projectCard.filter(
-        (project: { selected: string }) => project.selected === selectedCategory
+        (project: Project) => project.selected === selectedCategory
       ),
     [selectedCategory]
   );
@@ -31,7 +32,7 @@ const ProjectList = () => {
         </div>
 
         <div className="row pt-5">
-          {filteredProjects.map((project: any, index: any) => (
+          {filteredProjects.map((project: Project, index: number) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>

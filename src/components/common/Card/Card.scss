@@ -1,0 +1,13 @@
+@import "../../../styles/base/variables";
+@import "../../../styles/base/mixins";
+
+.card-base {
+  @include card-base;
+  padding: $card-padding;
+  position: relative;
+  overflow: hidden;
+
+  &.card-hover {
+    @include card-hover;
+  }
+}

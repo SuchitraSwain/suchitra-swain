@@ -4,7 +4,7 @@ import "../../styles/GitHubContributions.scss";
 
 const GitHubContributions = () => {
   return (
-    <section className="github__contributions__section">
+    <section className="github__contributions__section" id="github_contributions">
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center">
