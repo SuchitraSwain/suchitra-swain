@@ -36,16 +36,6 @@ const MobileNavbar = () => {
               <img src={github} alt="GitHub" className="img-fluid" />
             </a>
           </div>
-          <div className="col-4">
-            <a
-              href="https://www.behance.net/suchitraswain"
-              className="nav-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={behance} alt="Behance" className="img-fluid" />
-            </a>
-          </div>
         </div>
       </div>
     </section>

@@ -136,20 +136,6 @@ const Navbar = () => {
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a
-                          href="https://www.behance.net/suchitraswain"
-                          className="nav-link"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src={behance}
-                            alt="Behance"
-                            className="img-fluid"
-                          />
-                        </a>
-                      </li>
-                      <li className="nav-item">
                         <HashLink
                           to="/contact-me"
                           className="nav-link contact__navbar"
