@@ -1,5 +1,5 @@
 import React from "react";
-import suchitra from "../../assets/suchitra.png";
+import suchitra from "../../assets/suchitra.jpeg";
 import "../../styles/AboutMe.scss";
 
 const AboutMe = () => {
@@ -20,32 +20,128 @@ const AboutMe = () => {
               Application Developer
             </h3>
             <p className="gray__color mt-3">
-              As a versatile software developer, I bring over five years of
-              extensive experience in both front-end and back-end development,
-              with a deep specialization in JavaScript and a keen eye for UI/UX
-              design. My commitment to continuous learning and passion for
-              tackling meaningful challenges has led me to work on a wide array
-              of projects, allowing me to thrive in diverse and dynamic
-              environments. My ability to rapidly acquire new skills enables me
-              to juggle multiple projects and roles effortlessly, making me a
-              valuable asset in any tech team.
+              Highly proficient and driven{" "}
+              <strong className="dark__green__color">
+                front-end developer
+              </strong>{" "}
+              with over{" "}
+              <strong className="dark__green__color">five years</strong> of
+              experience in designing, building, and deploying{" "}
+              <strong className="dark__green__color">
+                small to large-scale interactive websites and web applications
+              </strong>
+              . Leveraging a deep understanding of{" "}
+              <strong className="dark__green__color">
+                standard web technologies
+              </strong>
+              , I specialize in creating{" "}
+              <strong className="dark__green__color">
+                robust and user-friendly digital experiences
+              </strong>
+              .
             </p>
+
+            <div className="mt-4">
+              <h5 className="dark__green__color fw-bold mb-3">
+                Core Competencies:
+              </h5>
+
+              <div className="mb-3">
+                <h6 className="dark__green__color fw-bold mb-2">
+                  Advanced Skills:
+                </h6>
+                <p className="gray__color">
+                  Proficient in{" "}
+                  <strong className="dark__green__color">ReactJS</strong>,{" "}
+                  <strong className="dark__green__color">NextJs</strong>,{" "}
+                  <strong className="dark__green__color">Angular</strong>,{" "}
+                  <strong className="dark__green__color">TypeScript</strong>,{" "}
+                  <strong className="dark__green__color">
+                    JavaScript/jQuery
+                  </strong>
+                  ,{" "}
+                  <strong className="dark__green__color">
+                    Version Control (Git)
+                  </strong>
+                  , <strong className="dark__green__color">HTML/CSS</strong>,{" "}
+                  <strong className="dark__green__color">
+                    Responsive Design
+                  </strong>
+                  ,{" "}
+                  <strong className="dark__green__color">
+                    Browser Developer Tools
+                  </strong>
+                  ,{" "}
+                  <strong className="dark__green__color">
+                    Web Performance Optimization
+                  </strong>
+                  , and{" "}
+                  <strong className="dark__green__color">
+                    Testing/Debugging methodologies
+                  </strong>{" "}
+                  using tools like{" "}
+                  <strong className="dark__green__color">Jest</strong> and{" "}
+                  <strong className="dark__green__color">Cypress</strong>.
+                </p>
+              </div>
+
+              <div className="mb-3">
+                <h6 className="dark__green__color fw-bold mb-2">
+                  Intermediate Knowledge:
+                </h6>
+                <p className="gray__color">
+                  Competent in{" "}
+                  <strong className="dark__green__color">
+                    server-side development
+                  </strong>{" "}
+                  with <strong className="dark__green__color">NodeJs</strong>{" "}
+                  and{" "}
+                  <strong className="dark__green__color">
+                    database management
+                  </strong>{" "}
+                  using <strong className="dark__green__color">MYSQL</strong>,{" "}
+                  <strong className="dark__green__color">MongoDB</strong>, and{" "}
+                  <strong className="dark__green__color">Prisma</strong>.
+                </p>
+              </div>
+
+              <div className="mb-3">
+                <h6 className="dark__green__color fw-bold mb-2">
+                  Emerging Expertise:
+                </h6>
+                <p className="gray__color">
+                  Exploring the realms of{" "}
+                  <strong className="dark__green__color">
+                    Machine Learning
+                  </strong>
+                  ,{" "}
+                  <strong className="dark__green__color">Deep Learning</strong>,
+                  and{" "}
+                  <strong className="dark__green__color">
+                    Artificial Intelligence
+                  </strong>
+                  , and continuously expanding my skill set in these{" "}
+                  <strong className="dark__green__color">
+                    groundbreaking technologies
+                  </strong>
+                  .
+                </p>
+              </div>
+            </div>
             <p className="gray__color mt-3">
-              My technical proficiency spans a comprehensive range of tools and
-              frameworks, including ReactJs, NextJs, Angular, and Node.js,
-              alongside expertise in testing frameworks like Jest and Cypress,
-              and integration tools such as Jenkins. This diverse skill set,
-              rooted in JavaScript, empowers me to deliver robust software
-              solutions that seamlessly integrate front-end aesthetics with
-              back-end functionality.
-            </p>
-            <p className="gray__color mt-3">
-              Adaptability is at the core of my professional ethos, allowing me
-              to seamlessly transition between technologies and programming
-              languages as required. Whether setting up infrastructure or
-              developing client-facing interfaces, my comprehensive approach
-              ensures that I deliver high-quality, end-to-end software solutions
-              that meet and exceed project requirements.
+              I am committed to translating{" "}
+              <strong className="dark__green__color">innovative ideas</strong>{" "}
+              into{" "}
+              <strong className="dark__green__color">
+                seamless and intuitive user experiences
+              </strong>
+              , constantly pushing the boundaries of{" "}
+              <strong className="dark__green__color">web development</strong> to
+              deliver{" "}
+              <strong className="dark__green__color">
+                outstanding results
+              </strong>
+              .
             </p>
           </div>
         </div>
