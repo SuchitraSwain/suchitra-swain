@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "../styles/Navbar.scss";
 import Icon from "../assets/icon.png";
@@ -15,6 +15,8 @@ const targetHashes = [
   "#publication",
 ];
 
+const devFestPath = "/devfest";
+
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const location = useLocation();
@@ -27,6 +29,7 @@ const Navbar = () => {
   }, [isCollapsed]);
 
   const isActiveNavLink = (navHash: string) => location.hash === navHash;
+  const isDevFestActive = () => location.pathname === devFestPath;
 
   const isHelloActive = () =>
     (isActiveNavLink("#hello") || location.pathname === "/") &&
@@ -46,14 +49,14 @@ const Navbar = () => {
       }`}
       id="/"
     >
-      <div className="container p-0">
+      <div className="container-fluid p-0">
         <div className="row">
           <div className="col-md-12">
             <nav
               className="navbar navbar-expand-lg p-0"
               style={{ height: isCollapsed ? "auto" : "100vh" }}
             >
-              <div className="container p-0 d-flex justify-content-between">
+              <div className="container-fluid p-0 px-md-3 d-flex justify-content-between">
                 <a className="navbar-brand text-white mx-3" href="/">
                   <img
                     src={Icon}
@@ -123,6 +126,19 @@ const Navbar = () => {
                         </HashLink>
                       </li>
                     ))}
+                    <li
+                      className={`nav-item ${
+                        isDevFestActive() ? "active" : ""
+                      }`}
+                    >
+                      <Link
+                        to={devFestPath}
+                        className="nav-link text-light"
+                        onClick={handleNavLinkClick}
+                      >
+                        _google-devfest
+                      </Link>
+                    </li>
                   </ul>
                   <div className="d-md-flex d-none">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">

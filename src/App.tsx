@@ -7,6 +7,7 @@ import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
 import ProjectDetails from "./pages/Projects/ProjectDetails";
 import ProjectList from "./pages/Projects/ProjectList";
+import DevFest from "./pages/DevFest/DevFest";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact-me" element={<Contact />} />
           <Route path="/projects" element={<ProjectList />} />
           <Route path="/projects/:url" element={<ProjectDetails />} />
+          <Route path="/devfest" element={<DevFest />} />
         </Routes>
       </main>
     </BrowserRouter>
